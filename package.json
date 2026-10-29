@@ -1,0 +1,73 @@
+{
+  "name": "@astricaelus/dsh-translate",
+  "version": "1.0.0",
+  "description": "A focused translation workspace for DeepSeek Harness with web and configured-model providers.",
+  "license": "MIT",
+  "author": "Zhuang Yumin <zhuangyumin@sjtu.edu.cn>",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "translation",
+    "translate",
+    "llm"
+  ],
+  "homepage": "https://github.com/Astricaelus/dsh-translate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Astricaelus/dsh-translate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Astricaelus/dsh-translate/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "src/shared/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.5",
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build-client.mjs",
+    "test": "node --test test/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "node --check index.js && node --check lib/server.js && npm run typecheck && npm run build && npm test"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "esbuild": "^0.25.11",
+    "typescript": "^5.9.3"
+  }
+}

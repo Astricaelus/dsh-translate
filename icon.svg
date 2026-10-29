@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Translate">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <path d="M17 17.5h17.5a6 6 0 0 1 6 6v9a6 6 0 0 1-6 6H28l-7.5 5v-5H17a6 6 0 0 1-6-6v-9a6 6 0 0 1 6-6Z" fill="#fff" fill-opacity=".96"/>
+  <path d="M19.8 24.8l4.8 12h-2.8l-1-2.8h-4.9l-1 2.8h-2.7l4.8-12h2.8Zm-2.9 7.2h3l-1.5-4.4-1.5 4.4Z" fill="#2563EB"/>
+  <path d="M42.5 27.5c6 0 10.5 3.8 10.5 9s-4.5 9-10.5 9h-1.7l-5.2 3.7v-4.5a9 9 0 0 1-3.9-4h3.6a6.2 6.2 0 0 0 7.2 2.1c2.6-.6 4.8-2.7 4.8-6.3 0-3.8-2.4-6.2-4.8-6.2s-4.8 1.7-4.8 5.1a7.8 7.8 0 0 0 .2 1.6h-2.7a11 11 0 0 1-.2-1.7c0-4.8 3.7-7.8 7.5-7.8Z" fill="#fff" fill-opacity=".76"/>
+  <path d="M37.5 31.3c2.9 0 5.5 2.2 5.5 5.2s-2.6 5.2-5.5 5.2-5.5-2.2-5.5-5.2 2.6-5.2 5.5-5.2Zm0 2.2c-1.5 0-2.8 1.3-2.8 3s1.3 3 2.8 3 2.8-1.3 2.8-3-1.3-3-2.8-3Z" fill="#fff" fill-opacity=".76"/>
+</svg>

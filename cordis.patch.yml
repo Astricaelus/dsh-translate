@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-translate
+      name: '@astricaelus/dsh-translate'
